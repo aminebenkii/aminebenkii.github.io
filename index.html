@@ -559,7 +559,28 @@
 		</div>
 		</section>
 		  
-		
+	<!-- Floating Chatbot -->
+	<div id="chatbot-container">
+		<button id="chatbot-button" title="Need help?">
+		<span>💬</span>
+		</button>
+		<div id="chat-popup">
+		<div id="chat-header">
+			<h4>Let's Chat !</h4>
+			<button id="close-chat" title="Close">✖</button>
+		</div>
+		<div id="chat-messages"></div>
+		<div id="chat-input-container">
+			<input
+			type="text"
+			id="chat-input"
+			placeholder="Type your question..."
+			aria-label="Type your question..."
+			/>
+			<button id="send-chat">Send</button>
+		</div>
+		</div>
+	</div>	
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -641,8 +662,8 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  
+  <script src="js/chatbot.js"></script>
   <script src="js/main.js"></script>
-    
+	
   </body>
 </html>
