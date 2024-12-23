@@ -1,3 +1,17 @@
+// Chat window toggle logic
+const chatbotButton = document.getElementById("chatbot-button");
+const chatPopup = document.getElementById("chat-popup");
+const closeChatButton = document.getElementById("close-chat");
+
+chatbotButton.addEventListener("click", () => {
+    chatPopup.style.display = "block"; // Show the chat window
+});
+
+closeChatButton.addEventListener("click", () => {
+    chatPopup.style.display = "none"; // Hide the chat window
+});
+
+// Chat message logic
 const chatInput = document.getElementById("chat-input");
 const chatMessages = document.getElementById("chat-messages");
 const sendButton = document.getElementById("send-chat");
