@@ -2,3 +2,4 @@ flask
 openai
 gunicorn
 langchain_chroma 
+langchain_openai
