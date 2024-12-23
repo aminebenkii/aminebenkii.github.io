@@ -1,4 +1,5 @@
 from flask import Flask, send_from_directory, request, jsonify
+from flask_cors import CORS  
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
@@ -6,6 +7,7 @@ import os
 
 # Initialize Flask app
 app = Flask(__name__, static_url_path='', static_folder='')
+CORS(app, origins=["https://aminebenkirane.dev"])  # Allow requests from your custom domain
 
 # Environment Variables
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")

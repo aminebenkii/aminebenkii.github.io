@@ -1,5 +1,6 @@
 flask
 openai
 gunicorn
-langchain_chroma 
+langchain_chroma
 langchain_openai
+flask-cors
